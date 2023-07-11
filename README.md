@@ -79,6 +79,14 @@ Acess the "server" directory
 cd server
 ```
 
+
+Rename the ".env.example" to ".env"
+```bash
+Rename:
+.env.example    ->   .env
+```
+
+
 Install packages de composer
 ```bash
 composer install
