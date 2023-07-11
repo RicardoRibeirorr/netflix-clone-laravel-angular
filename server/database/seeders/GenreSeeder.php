@@ -14,7 +14,7 @@ class GenreSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('genres')->insert([]); //movies
-        DB::table('genres')->insert([]); //series
+        DB::table('genres')->insert([]); //Some genre
+        DB::table('genres')->insert([]); //Other like "action"
     }
 }
