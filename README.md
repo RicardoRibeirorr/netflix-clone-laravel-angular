@@ -8,7 +8,7 @@
 </h3>
 
 <p align="center">
-  <img alt="application interface" src=".__showcase/home.png" width="100%">
+  <img alt="application interface" src="/__showcase/home.png" width="100%">
 </p>
 
 ## :rocket: Tecnologies
@@ -35,12 +35,12 @@ All data from catalogs like title, description, cover, background photo and rati
 
 
 ## :muscle: Showcase
-  <img alt="application interface" src=".__showcase/home.png" width="50%" style="min-width:500px">
-  <img alt="application interface" src=".__showcase/home_menu.png" width="50%" style="min-width:500px">
-  <img alt="application interface" src=".__showcase/player.png" width="50%" style="min-width:500px">
-  <img alt="application interface" src=".__showcase/modal_media.png" width="50%" style="min-width:500px">
-  <img alt="application interface" src=".__showcase/lazy_loading.png" width="50%" style="min-width:500px">
-  <img alt="application interface" src=".__showcase/login.png" width="50%" style="min-width:500px">
+  <img alt="application interface" src="/__showcase/home.png" width="50%" style="min-width:500px">
+  <img alt="application interface" src="/__showcase/home_menu.png" width="50%" style="min-width:500px">
+  <img alt="application interface" src="/__showcase/player.png" width="50%" style="min-width:500px">
+  <img alt="application interface" src="/__showcase/modal_media.png" width="50%" style="min-width:500px">
+  <img alt="application interface" src="/__showcase/lazy_loading.png" width="50%" style="min-width:500px">
+  <img alt="application interface" src="/__showcase/login.png" width="50%" style="min-width:500px">
 
 
 
