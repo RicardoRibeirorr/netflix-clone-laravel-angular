@@ -32,7 +32,7 @@ for (let index = 0; index < la.length; index++) {
 
 
 if(elem.indexOf("<video")<0){
-    
+    console.log('ERROR: Link is not public (probably youtube or another provider). It will be set to "XXXXXXXXXXXXXXXXXXX"')
     episodesList.push({
     					url:'XXXXXXXXXXXXXXXXXXXXXXX',
     					season:1,
