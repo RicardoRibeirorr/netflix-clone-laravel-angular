@@ -1,0 +1,60 @@
+
+
+<!-- Modal Show -->
+<div *ngIf="item" id="modal-media-show-{{item.id}}" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content" *ngIf="item">
+        <div class="modal-body media-show rounded">
+          <div class="media-show-hero rounded" style="background-image: url('{{item.image_url}}')"></div>
+          <div class="media-show-info">
+            <h2 class="text-white fw-bold lh-42" style="font-size:3rem;">{{item.title}}</h2>
+            <p class="text-white ">{{item.description}}</p>
+            <br>
+            <a href="/watch?media={{item.id}}" class="btn btn-lg btn-white" type="button"><i class="fa-solid fa-play me-2"></i> Assistir</a>
+            <a href="#" class="btn btn-outline-light border-translucent rounded-circle ms-2"><i
+                class="fa-regular fa-heart"></i></a>
+          </div>
+        </div>
+        
+        <div class="modal-footer border-0 d-block"  *ngIf="item.type==='SERIE'">
+          <div class="media-show-content" *ngIf="mediaLoaded && item && item.seasons; else loading">
+            <p class="text-white"><span class="me-2" *ngIf="item.type==='SERIE'">T{{item.seasons_count}} | EPS{{item.episodes_count}}</span> <span>"{{item.title}}"</span></p>
+            <div class="mt-4">
+              <div class="d-flex justify-content-between">
+                <h4>Episodios</h4>
+                <div *ngIf="item.seasons_count > 1" class="form-group">
+                  <select (change)="onHandleSeasonChange($event)" class="form-control form-control-dark" [value]="selectedSeason" name="">
+                    <option *ngFor="let season of item.seasons" [value]="season.season" [selected]="season.season == selectedSeason">Season {{season.season}}</option>
+                  </select>
+                </div>
+  
+              </div>
+              <div class="list-group list-group-flush mt-3">
+                <!-- <a *ngFor="let video of getVideosSeason(); index" href="#" class="list-group-item py-3 active">
+                  <div class="d-flex">
+                    <button class="btn btn-lg btn-translucent ms-3 rounded-circle" type="button"><i
+                        class="fa-solid fa-play"></i></button>
+                    <div class="ms-3">
+                      <span class="text-white d-block fw-bold" style="font-size: 20px;"> Episodio <b>{{video.episode}}</b></span>
+                      <span class="d-block" style="font-size: 10px; color: gray;"> Click para assistir</span>
+                    </div>
+                  </div>
+                </a> -->
+                <a *ngFor="let video of getVideosSeason(); index"  href="/watch?media={{item.id}}&video={{video.id}}" class="list-group-item py-3">
+                  <div class="d-flex">
+                    <button class="btn btn-translucent ms-3 rounded-circle" type="button"><i
+                        class="fa-solid fa-play"></i></button>
+  
+                    <span class="text-white ms-3 mt-1">T{{video.season}} Episodio <b>{{video.episode}} <span *ngIf="video.title"> - {{video.title}}</span></b></span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <ng-template #loading>
+             <div><div class="animated-background rounded" style="width: 100%; height: 50px;"></div></div>
+          </ng-template>
+        </div>
+      </div>
+    </div>
+  </div>

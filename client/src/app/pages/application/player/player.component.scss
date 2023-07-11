@@ -1,0 +1,227 @@
+// .main-container, video{
+//     width: 100%;
+//     height: 100vh;
+//     overflow: hidden;
+// }
+
+.controls-header-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 12vh;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+    z-index: 2;
+    padding: 1rem;
+}
+
+.container-next-episode{
+    position: absolute;
+    bottom: 20vh;
+    right: 3rem;
+}
+
+.progress {
+  width:0%;
+  height:100%;
+  background-color: #00000059; /*set desired color*/
+  animation-name: progress-next-anim;
+  animation-duration: 6s;
+  position:absolute;
+  left:0;
+  top:0;
+  border-radius: .5rem;
+}
+@keyframes progress-next-anim {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+
+.play-pause-container{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    position: absolute;
+    cursor: pointer;
+}
+
+.controls-footer-container, .controls-header-container{
+    z-index: 1;
+}
+
+
+.controls-container{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 1;
+}
+
+.video-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .video-container video {
+    width: 100%;
+    height: 100vh;
+  }
+  
+  .video-container .controls-container .controls-footer-container {
+    position: fixed;
+    opacity: 1!important;
+    bottom: 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: 13vh;
+    /* Thanks to theArtifacts */
+    background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.9)); 
+    transition: opacity 0.5s linear;
+  }
+  
+  .video-container .progress-controls {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+  
+  .video-container .progress-controls .time-remaining {
+    margin: 1vw;
+    width: 4vw;
+  }
+  
+  .video-container .progress-controls .progress-bar {    
+    width: 90vw;
+    height: 1vw;
+    max-height: 7px;
+    background: #5B5B5B;
+    display: flex;
+    align-items: flex-start;
+    cursor: pointer;
+    align-content: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+  }
+  
+  .video-container .progress-controls .progress-bar .watched-bar,
+  .video-container .progress-controls .progress-bar .playhead {
+    background: #E31221;
+    display: inline-block;
+    transition: all 0.2s;
+  }
+  
+  .video-container .progress-controls .progress-bar .watched-bar {
+    height: 110%;
+    width: 0%;
+  }
+  
+  .video-container .progress-controls .progress-bar .playhead {
+    height: 3vw;
+    width: 3vw;
+    max-height: 25px;
+    max-width: 25px;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    transform: translateX(-50%) translateY(-30%);
+    position: absolute;
+  }
+  
+  .video-container .controls {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .video-container .controls button {
+    background: none;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    width: 5vw;
+    height: 5vw;
+    min-width: 50px;
+    min-height: 50px;
+    margin: 0px 1vw;
+    opacity: 0.4;
+    transform: scale(0.9);
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .video-container .controls button:hover {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  
+  .video-container .controls button svg {
+    fill: white;
+    stroke: white;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .video-container .controls button.volume svg path,
+  .video-container .controls button.help svg,
+  .video-container .controls button.episodes svg,
+  .video-container .controls button.full-screen svg,
+  .video-container .controls button.volume svg path,
+  .video-container .controls button.cast svg {
+    fill: none;
+  }
+  
+  .video-container .controls button.rewind svg,
+  .video-container .controls button.fast-forward svg {
+    stroke: none;
+  }
+  
+  .video-container .controls button.captions svg {
+    stroke: none;
+  }
+  
+  .video-container .controls .title {
+    font-size: 2vw;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .video-container .controls .title {
+      display: none;
+    }
+  }
+  
+  .video-container .controls .title .series {
+    color: #FEFEFE;
+    font-weight: bold;
+    font-size: 1em;
+  }
+  
+  .video-container .controls .title .episode {
+    color: #A1A1A1;
+    font-size: 0.75em;
+    padding-left: 1vw;
+  }
+

@@ -1,0 +1,227 @@
+body {
+  background-color: #000000;
+}
+
+header {
+  padding: 10px;
+  background: linear-gradient(180deg,
+      rgba(0, 0, 0, 0.69) 0%,
+      rgba(0, 0, 0, 0) 100%);
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+
+  img {
+    width: 150px;
+  }
+}
+
+
+
+/* You can add global styles to this file, and also import other style files */
+.menu_list {
+  list-style: none;
+  padding-left: 0;
+  padding-top: 7px;
+
+  li {
+    display: inline-block;
+    margin-left: 15px;
+
+    a {
+      color: #fff;
+
+      &:hover {
+        color: #9b9b9b;
+      }
+    }
+  }
+}
+
+
+.lh-55 {
+  line-height: 55px !important;
+}
+
+.lh-42 {
+  line-height: 42px !important;
+}
+
+
+.btn-white {
+  background-color: #fff;
+  font-weight: 600;
+
+  &:hover {
+    background-color: #fff;
+    opacity: .8;
+  }
+}
+
+.btn-translucent {
+  background-color: hsla(0, 0%, 100%, 20%);
+  color: white;
+  font-weight: 600;
+
+  &:hover {
+    color: white;
+    background-color: hsla(0, 0%, 100%, 20%);
+    opacity: .8;
+  }
+}
+
+.border-translucent {
+  border: 3px solid #ffffff59;
+}
+
+
+/////////////////////////////////////////////////////////////////////////////////////
+// MEDIA
+/////////////////////////////////////////////////////////////////////////////////////
+.media-list {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  list-style: none;
+  padding: 20px 0;
+  display: block;
+}
+
+.media-list-grid{
+  padding: 20px 0;
+  overflow: hidden;
+}
+
+.media-list::-webkit-scrollbar {
+  display: none;
+}
+
+.media-item {
+  display: inline-block;
+  max-width: 300px;
+  margin-right: 10px;
+  border-radius: 3px;
+  transition: 0.5s;
+
+  .media-info {
+    background-color: #171717;
+    padding: 17px;
+    width: 100%;
+    height: 100px;
+    transition: 0.5s;
+    opacity: 0;
+    // transform: scale(0);
+
+    p {
+      color: #7e7b7b;
+      font-size: 14px;
+      margin-top: 10px;
+
+      span {
+        color: white;
+      }
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.1) !important;
+    z-index: 999;
+
+    .media-info {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+}
+
+
+
+.section-media {
+  padding-top: 1rem;
+  position: relative;
+  margin-bottom: 2rem;
+
+  &:hover {
+    z-index: 999;
+  }
+}
+
+
+
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////
+// Modals
+/////////////////////////////////////////////////////////////////////////////////////
+.modal-content {
+  background-color: #171717;
+  color: white;
+}
+
+.modal-backdrop.show {
+    opacity: .6;
+}
+
+
+
+.list-group-item{
+    background: transparent;
+    color: white;
+}
+
+.list-group-flush .list-group-item{
+    border-bottom: 1px solid #ffffff21;
+
+    &.active, &:hover{
+      background-color: #272727;
+      border: 0;
+    }
+}
+
+
+.animated-background {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: placeHolderShimmer;
+  animation-name: placeHolderShimmer;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  background: #f6f7f8;
+  background: #3e3c3c;
+  background: -webkit-gradient(linear, left top, right top, color-stop(8%, #3e3c3c), color-stop(18%, #1e1e1e), color-stop(33%, #373737));
+  background: -webkit-linear-gradient(left, #3e3c3c 8%, #1e1e1e 18%, #373737 33%);
+  background: linear-gradient(to right,  #3e3c3c 8%,#1e1e1e 18%,#373737 33%);
+  -webkit-background-size: 800px 104px;
+  background-size: 800px 104px;
+  height: 96px;
+  position: relative;
+}
+
+// Animation
+@-webkit-keyframes placeHolderShimmer{
+  0%{
+      background-position:-468px 0
+  }
+  100%{
+      background-position:468px 0
+  }
+}
+
+@keyframes placeHolderShimmer{
+  0%{
+      background-position:-468px 0
+  }
+  100%{
+      background-position:468px 0
+  }
+}
+

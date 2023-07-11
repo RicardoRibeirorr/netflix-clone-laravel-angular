@@ -1,0 +1,40 @@
+<!-- Header navbar -->
+<app-navbar></app-navbar>
+  
+  
+  <!-- Content list -->
+  <div id="main-content">
+  
+    <!-- media  Section -->
+    <section class="section-media">
+      <div class="container">
+        <h2 class="text-white h4">Pesquisar</h2>
+        <!-- Loading -->
+        <ul class="media-list-grid" *ngIf="!favoriteLoaded">
+          <li>
+            <div class="media-item animated-background" style="width: 250px; height: 170px;"></div>
+          </li>
+        </ul>
+        <!-- Data -->
+        <div *ngIf="favoriteData">
+          <ul class="media-list-grid row" *ngIf="favoriteLoaded" scrollTracker (scrollingFinished)="onScrollingFinished()">
+            <app-media-item *ngFor="let media of favoriteData" [item]="media" class="col-12 col-md-6 col-lg-4"></app-media-item>
+          </ul>
+        </div>
+        <ng-template #noData>
+          <p class="text-center text-light display-4">Não Encontrado</p>
+        </ng-template>
+        <ul class="media-list-grid" *ngIf="!moreFavoriteLoaded">
+          <li>
+            <div class="media-item animated-background" style="width: 250px; height: 170px;"></div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="w-100 text-center">
+        <button (click)="onScrollingFinished()" class="btn btn-light btn-translucent" *ngIf="favoriteData && moreFavoriteLoaded && mediaRequest && mediaRequest.next_page_url!==null">Carregar mais</button>
+      </div>
+    </section>
+  </div>
+  
+  <app-modal-media-show></app-modal-media-show>

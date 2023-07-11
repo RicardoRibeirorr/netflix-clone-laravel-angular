@@ -1,0 +1,176 @@
+[
+    {
+        "id":0,
+        "genre_id":0,
+    
+        "title":"Jurassic World",
+        "description":"Jurassic World: Dominion Director Claims Coronavirus Shutdown Helped the Movie",
+        "image_url":"https://media.comicbook.com/2020/07/jurassic-world-dominion-logo-1227952.jpeg?auto=webp",
+        "trailer_url":"https://lightspeedst.net/s5/mp4_temp/maou-gakuin-no-futekigousha-shijou-saikyou-no-maou-no-shiso-tensei-shite-shison-tachi-no-gakkou-e-kayou-ii/2/480p.mp4",
+        "type":"MOVIE",
+    
+        "seasons_count":0, 
+        "episodes_count":0, 
+    
+        "videos":[{
+            "id":0,
+            "media_id":0,
+        
+            "title":"",
+            "description":"",
+            "base_media_url":"https://lightspeedst.net/s5/mp4_temp/maou-gakuin-no-futekigousha-shijou-saikyou-no-maou-no-shiso-tensei-shite-shison-tachi-no-gakkou-e-kayou-ii/2/480p.mp4",
+        
+            "season":0,
+            "episode":0,
+        
+            "created_at":"2020-05-16 12:38:23",
+            "updated_at":"2020-05-16 12:38:23"
+        }],
+    
+        "created_at":"2020-05-16 12:38:23",
+        "updated_at":"2020-05-16 12:38:23"
+    },
+    {
+        "id":1,
+        "genre_id":0,
+    
+        "title":"Jurassic World 2",
+        "description":"Jurassic World 2: Dominion Director Claims Coronavirus Shutdown Helped the Movie",
+        "image_url":"https://media.comicbook.com/2020/07/jurassic-world-dominion-logo-1227952.jpeg?auto=webp",
+        "trailer_url":"https://lightspeedst.net/s5/mp4_temp/maou-gakuin-no-futekigousha-shijou-saikyou-no-maou-no-shiso-tensei-shite-shison-tachi-no-gakkou-e-kayou-ii/2/480p.mp4",
+        "type":"MOVIE",
+    
+        "seasons_count":0, 
+        "episodes_count":0, 
+    
+        "videos":[{
+            "id":1,
+            "media_id":1,
+        
+            "title":"",
+            "description":"",
+            "base_media_url":"https://lightspeedst.net/s5/mp4_temp/maou-gakuin-no-futekigousha-shijou-saikyou-no-maou-no-shiso-tensei-shite-shison-tachi-no-gakkou-e-kayou-ii/2/480p.mp4",
+        
+            "season":0,
+            "episode":0,
+        
+            "created_at":"2020-05-16 12:38:23",
+            "updated_at":"2020-05-16 12:38:23"
+        }],
+    
+        "created_at":"2020-05-16 12:38:23",
+        "updated_at":"2020-05-16 12:38:23"
+    },{
+        "id":2,
+        "genre_id":3,
+    
+        "title":"Jurassic World 3",
+        "description":"Jurassic World: 3 Dominion Director Claims Coronavirus Shutdown Helped the Movie",
+        "image_url":"https://media.comicbook.com/2020/07/jurassic-world-dominion-logo-1227952.jpeg?auto=webp",
+        "trailer_url":"https://lightspeedst.net/s5/mp4_temp/maou-gakuin-no-futekigousha-shijou-saikyou-no-maou-no-shiso-tensei-shite-shison-tachi-no-gakkou-e-kayou-ii/2/480p.mp4",
+        "type":"MOVIE",
+    
+        "seasons_count":0, 
+        "episodes_count":0, 
+    
+        "videos":[{
+            "id":2,
+            "media_id":2,
+        
+            "title":"",
+            "description":"",
+            "base_media_url":"https://lightspeedst.net/s5/mp4_temp/maou-gakuin-no-futekigousha-shijou-saikyou-no-maou-no-shiso-tensei-shite-shison-tachi-no-gakkou-e-kayou-ii/2/480p.mp4",
+        
+            "season":0,
+            "episode":0,
+        
+            "created_at":"2020-05-16 12:38:23",
+            "updated_at":"2020-05-16 12:38:23"
+        }],
+    
+        "created_at":"2020-05-16 12:38:23",
+        "updated_at":"2020-05-16 12:38:23"
+    },{
+        "id":3,
+        "genre_id":4,
+    
+        "title":"Peaky Blinders",
+        "description":"A notorious gang in 1919 Birmingham, England, is led by the fierce Tommy Shelby, a crime boss set on moving up in the world no matter the cost.",
+        "image_url":"https://i.uai.com.br/D0eXjf1wcNIvPAHZWgog4mqrn-Q=/1200x900/smart/imgsapp2.uai.com.br/app/noticia_133890394703/2022/07/18/293326/cillian-murphy-como-tommy-em-peaky-blinders_1_52502.jpg",
+        "trailer_url":"https://youtu.be/oVzVdvGIC7U",
+        "type":"SERIE",
+    
+        "seasons_count":0, 
+        "episodes_count":0, 
+    
+        "videos":[{
+            "id":3,
+            "media_id":3,
+        
+            "title":"",
+            "description":"",
+            "base_media_url":"https://lightspeedst.net/s5/mp4_temp/maou-gakuin-no-futekigousha-shijou-saikyou-no-maou-no-shiso-tensei-shite-shison-tachi-no-gakkou-e-kayou-ii/2/480p.mp4",
+        
+            "season":1,
+            "episode":1,
+        
+            "created_at":"2020-05-16 12:38:23",
+            "updated_at":"2020-05-16 12:38:23"
+        },{
+            "id":4,
+            "media_id":3,
+        
+            "title":"",
+            "description":"",
+            "base_media_url":"https://lightspeedst.net/s5/mp4_temp/maou-gakuin-no-futekigousha-shijou-saikyou-no-maou-no-shiso-tensei-shite-shison-tachi-no-gakkou-e-kayou-ii/3/480p.mp4",
+        
+            "season":1,
+            "episode":2,
+        
+            "created_at":"2020-05-16 12:38:23",
+            "updated_at":"2020-05-16 12:38:23"
+        },{
+            "id":5,
+            "media_id":3,
+        
+            "title":"",
+            "description":"",
+            "base_media_url":"https://lightspeedst.net/s5/mp4_temp/maou-gakuin-no-futekigousha-shijou-saikyou-no-maou-no-shiso-tensei-shite-shison-tachi-no-gakkou-e-kayou-ii/4/480p.mp4",
+        
+            "season":1,
+            "episode":3,
+        
+            "created_at":"2020-05-16 12:38:23",
+            "updated_at":"2020-05-16 12:38:23"
+        },{
+            "id":6,
+            "media_id":3,
+        
+            "title":"",
+            "description":"",
+            "base_media_url":"https://lightspeedst.net/s5/mp4_temp/maou-gakuin-no-futekigousha-shijou-saikyou-no-maou-no-shiso-tensei-shite-shison-tachi-no-gakkou-e-kayou-ii/5/480p.mp4",
+        
+            "season":2,
+            "episode":1,
+        
+            "created_at":"2020-05-16 12:38:23",
+            "updated_at":"2020-05-16 12:38:23"
+        },{
+            "id":7,
+            "media_id":3,
+        
+            "title":"",
+            "description":"",
+            "base_media_url":"https://lightspeedst.net/s5/mp4_temp/maou-gakuin-no-futekigousha-shijou-saikyou-no-maou-no-shiso-tensei-shite-shison-tachi-no-gakkou-e-kayou-ii/6/480p.mp4",
+        
+            "season":3,
+            "episode":1,
+        
+            "created_at":"2020-05-16 12:38:23",
+            "updated_at":"2020-05-16 12:38:23"
+        }],
+    
+        "created_at":"2020-05-16 12:38:23",
+        "updated_at":"2020-05-16 12:38:23"
+    }
+]

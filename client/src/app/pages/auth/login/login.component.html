@@ -1,0 +1,38 @@
+<header class="showcase">
+    <div class="logo">
+        <img src="https://i.ibb.co/r5krrdz/logo.png">
+    </div>
+
+    <div class="showcase-content">
+        <div class="formm">
+            <form name="form" [formGroup]="formGroup"
+            (ngSubmit)="onSubmit()">
+                <h1>Sign In</h1>
+                <div class="info">
+                    <input class="email" type="email" placeholder="Email..." formControlName="email" [ngClass]="{ 'is-invalid': submitted && f['email'].errors }" autocomplete="email" > <br>
+                    <div *ngIf="submitted && f['email'].errors" class="invalid-feedback">
+                        <div *ngIf="f['email'].errors['required']">Email é obrigatório</div>
+                        <div *ngIf="f['email'].errors['email']">Email inválido</div>
+                    </div>
+                    <input class="email" type="password" type="password" minlength="6" placeholder="Palavra chave..." formControlName="password" [ngClass]="{ 'is-invalid': submitted && f['password'].errors }" autocomplete="password">
+                    <div *ngIf="submitted && f['password'].errors" class="invalid-feedback">
+                        <div *ngIf="f['password'].errors['required']">Palavra chave obrigatória</div>
+                        <div *ngIf="f['password'].errors['minlength']">Minimo 6 caracteres</div>
+                    </div>
+                </div>
+                <div class="btn">
+                    <button class="btn-primary" type="submit">Sign In</button>
+                </div>
+
+            </form>
+
+        </div>
+        <div class="more">
+            <p>
+                This page is private and not open to the public. Is part of a project of web scrapping and grouping public video content. We are not responsible for any legal action and we do not support the use of this plataform for any malicious or illegal use.
+            </p>
+        </div>
+
+
+    </div>
+</header>

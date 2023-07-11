@@ -1,0 +1,15 @@
+<li *ngIf="item" class="media-item" (click)="onHandleOpenModel()" style="overflow: hidden;">
+    <img class="img-fluid" style="max-height: 170px;"
+      src="{{item.image_url}}"
+      alt="">
+    <div class="media-info">
+      <div class="mb-1">
+        <a href="/watch?media={{item.id}}" class="btn btn-light rounded-circle ms-1"><i class="fa-solid fa-play"></i></a>
+        <button (click)="onHandleToggleFavorite()" class="btn btn-outline-light border-translucent rounded-circle ms-2"><i
+            class="fa-regular fa-heart"></i></button>
+        <button (click)="onHandleOpenModel()" class="btn btn-outline-light border-translucent rounded-circle ms-2"><i
+            class="fa-solid fa-circle-info"></i></button>
+      </div>
+      <p><span class="me-2" *ngIf="item.type==='SERIE'">T{{item.seasons_count}} | EPS{{item.episodes_count}}</span> <span>"{{item.title}}"</span></p>
+    </div>
+  </li>

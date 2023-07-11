@@ -1,0 +1,90 @@
+<!-- Header navbar -->
+<app-navbar></app-navbar>
+
+
+<!-- Hero home page -->
+<div id="hero" style="background-image: url('{{topData && topData.image_url?topData.image_url:null}}')">
+  <div class="hover-image"></div>
+  <div class="container hero-info" *ngIf="topData!==null && topLoaded">
+    <div style="max-width: 500px;">
+      <h1 class="text-white fw-bold lh-55" style="font-size: 4rem;text-transform: uppercase;">{{topData.title}}</h1>
+    </div>
+    <div class="row" style="margin-top: 15vh;">
+      <div class="col-8">
+        <h3 class="text-white h4 fw-bold">TOP 1</h3>
+        <p class="text-white ">{{topData.description}}</p>
+        <br>
+        <a href="/watch?media={{topData.id}}" class="btn btn-lg btn-white" ><i class="fa-solid fa-play me-2"></i> Assistir</a>
+        <button (click)="onHandleInfoTop()" class="btn btn-lg btn-translucent ms-3" type="button"><i class="fa-solid fa-circle-info me-2"></i> Mais
+          Informações</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Content list -->
+<div id="main-content">
+
+  <!-- Watching  Section -->
+  <section class="section-media" *ngIf="(!watchedLoaded && !watchedData) || ( watchedData && watchedData.length>0) ">
+    <div class="container">
+      <h2 class="text-white h4">Continue Assistindo</h2>
+      <!-- Loading -->
+      <ul class="media-list" *ngIf="!watchedLoaded">
+        <li><div class="media-item animated-background" style="width: 250px; height: 170px;"></div></li>
+      </ul>
+      <!-- Data -->
+      <ul class="media-list" *ngIf="watchedLoaded">
+        <app-media-item *ngFor="let media of watchedData" [item]="media"></app-media-item>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Popular section -->
+  <section class="section-media">
+    <div class="container">
+      <h2 class="text-white h4">Populares da Netflix</h2>
+      <!-- Loading -->
+      <ul class="media-list" *ngIf="!hotLoaded">
+        <li><div class="media-item animated-background" style="width: 250px; height: 170px;"></div></li>
+      </ul>
+      <!-- Data -->
+      <ul class="media-list" *ngIf="hotLoaded">
+        <app-media-item *ngFor="let media of hotData" [item]="media"></app-media-item>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Similar Section -->
+  <section class="section-media" *ngIf="(!similarLoaded && !similarData) || ( similarData && similarData.length>0) ">
+    <div class="container">
+      <h2 class="text-white h4">Talvez Gostes</h2>
+      <!-- Loading -->
+      <ul class="media-list" *ngIf="!similarLoaded">
+        <li><div class="media-item animated-background" style="width: 250px; height: 170px;"></div></li>
+      </ul>
+      <!-- Data -->
+      <ul class="media-list" *ngIf="similarLoaded">
+        <app-media-item *ngFor="let media of similarData" [item]="media"></app-media-item>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Latest Section -->
+  <section class="section-media">
+    <div class="container">
+      <h2 class="text-white h4">Ultimas Novidades</h2>
+      <!-- Loading -->
+      <ul class="media-list" *ngIf="!latestLoaded">
+        <li><div class="media-item animated-background" style="width: 250px; height: 170px;"></div></li>
+      </ul>
+      <!-- Data -->
+      <ul class="media-list" *ngIf="latestLoaded">
+        <app-media-item *ngFor="let media of latestData" [item]="media"></app-media-item>
+      </ul>
+    </div>
+  </section>
+</div>
+
+  <app-modal-media-show></app-modal-media-show>
