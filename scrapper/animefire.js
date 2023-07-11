@@ -1,5 +1,8 @@
 /**************************************************************************************************************************** */
 // COPY AND PASTE IN THE PAGE ON CONSOLE OF THE ANIME/MOVIE WITH THE LIST OF THE EPISODE
+//
+// This is just a use case of the scrapper. I used it for security reasons and made a test on this website
+// and should not be used for illegal purposes.
 /**************************************************************************************************************************** */
 
 
