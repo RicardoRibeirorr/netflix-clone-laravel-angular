@@ -1,9 +1,9 @@
 <p align="center">
-  <img alt="NetflixClone" title="NetflixClone" src="https://cdn.cookielaw.org/logos/dd6b162f-1a32-456a-9cfe-897231c7763c/4345ea78-053c-46d2-b11e-09adaef973dc/Netflix_Logo_PMS.png" width="400px" />
+  <img alt="NetflixClone" title="NetflixClone" src="/__showcase/netflix_logo.png" width="400px" />
 </p>
 
 <h3 align = "center" fontSize="60px">
-  Clone of the streaming platform <a href="https://www.netflix.com/">Netflix</a>. Fully functional frontend & backend, movies and series, video player, lazy-loading and scroll loading, adn more...!
+  Clone of the streaming platform <a href="https://www.netflix.com/">Netflix</a>. Fully functional frontend & backend, movies and series, video player, lazy-loading and scroll loading, and more...!
   This repository was created for learning purposes and you use it at your own risk. I am not responsible for any illegality.
 </h3>
 
@@ -29,7 +29,7 @@ All data from catalogs like title, description, cover, background photo and rati
 
 - [x] **Data Request**: Data return with lazy-loading, pagination with scroll and button. Includes: search, movies, series, latest, top, continue watching. "Favorites" is still in development.
 
-- [x] **Player**: Includes all controls (i.e. back, pause, volume, +10sec, -10sec, next episode and fullscreen). Button of next episode and automatic episode passage after 6sec. Passage of episode between seasons is included.
+- [x] **Player**: Includes all controls (i.e. back, pause, volume, +10sec, -10sec, next episode and fullscreen). Button of next episode and automatic episode passage after 6sec. Passage of episodes between seasons is included.
 
 - [ ] **Dashboard**: Currently, all content will have to be added either through seeds or directly into the database.
 
@@ -50,7 +50,7 @@ Make a clone of this repository and access the directory.
 For the development environment, you should have 2 prompt/vscode windows open, for each environment (backend & frontend)
 
 #### Frontend
-Acess the "client" directory
+Access the "client" directory
 ```bash
 cd client
 ```
@@ -60,7 +60,7 @@ Install packages
 npm install
 ```
 
-Serve the aplication
+Serve the application
 ```bash
 ng serve
 ```
