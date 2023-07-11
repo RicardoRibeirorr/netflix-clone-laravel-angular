@@ -74,7 +74,7 @@ ng serve
 
 
 #### Backend
-Acess the "server" directory
+Access the "server" directory
 ```bash
 cd server
 ```
