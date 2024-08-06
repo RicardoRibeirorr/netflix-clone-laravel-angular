@@ -49,6 +49,13 @@ All data from catalogs like title, description, cover, background photo and rati
 Make a clone of this repository and access the directory.
 For the development environment, you should have 2 prompt/vscode windows open, for each environment (backend & frontend)
 
+Make sure you have installed:
+* composer
+* node 
+* npm
+* local sql like: XAMPP; WAMPP; MAMPP
+  - Also to run locally, you need to allow php.ini to include sqlite (search online, pretty simple)
+
 #### Frontend
 Access the "client" directory
 ```bash
